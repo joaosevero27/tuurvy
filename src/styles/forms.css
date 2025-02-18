@@ -1,0 +1,111 @@
+#sell-car-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: var(--color-neutral-0); /* Cor de fundo do formulário */
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+#request-car-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: var(--color-neutral-0); /* Cor de fundo do formulário */
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+#sell-car-form:hover {
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-5px); /* Levanta o formulário ligeiramente ao passar o mouse */
+}
+
+#request-car-form:hover {
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-5px); /* Levanta o formulário ligeiramente ao passar o mouse */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #434343;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px; /* Bordas arredondadas para os campos de input */
+    border: 1px solid #ddd; /* Borda clara para os campos de input */
+    font-size: 1rem;
+    box-sizing: border-box; /* Para garantir que o padding não afete a largura */
+    transition: border-color 0.3s ease; /* Transição para a cor da borda ao focar */
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary-6); /* Altera a cor da borda quando o input é focado */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+button:hover {
+    background-color: var(--color-primary-4); /* Cor do botão ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de levantar o botão */
+}
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Espaço entre os formulários */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+#sell-car-container, #request-car-container {
+    width: 48%; /* Cada formulário ocupará 48% da largura */
+}
+
+#sell-car-form, #request-car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+}
+
+button.btn-default {
+    margin-top: 20px;
+}
+
+/* 📱 Responsividade: coloca os formulários um abaixo do outro em telas menores */
+@media screen and (max-width: 768px) {
+    #form-container {
+        flex-direction: column; /* Altera para coluna */
+        align-items: center; /* Centraliza os formulários */
+    }
+
+    #sell-car-container, #request-car-container {
+        width: 100%; /* Cada formulário ocupa 100% da largura */
+    }
+}
+
